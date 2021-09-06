@@ -10,13 +10,14 @@ const Carrousel = () => {
   const [listCards, setListCards] = useState([]);
 
   useEffect(() => {
+    console.log("calling service");
     MockedService.getCardsInformation().then((response) => {
       const isSucess = response && Array.isArray(response);
       if (isSucess) {
         setListCards(response);
       }
     });
-  });
+  }, []);
 
   return (
     <View style={styles.container}>
