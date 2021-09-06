@@ -3,7 +3,7 @@
 Challenge de Puzzle con un Carrousel hecho manualmente
 
 <p align="center" width="350">
-  <img src="https://raw.githubusercontent.com/iRetray/PuzzleChallenge/master/previewapp.jpg" alt="drawing" width="350"/>
+  <img src="./workingapp.gif" alt="Carrousel" width="350"/>
 </p>
 
 ## Instalable para Android (.apk)
