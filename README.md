@@ -1,5 +1,8 @@
 # PuzzleChallenge
-<img src="https://raw.githubusercontent.com/iRetray/PuzzleChallenge/master/previewapp.jpg" alt="drawing" width="200"/>
+
+<p align="center" width="300">
+  <img src="https://raw.githubusercontent.com/iRetray/PuzzleChallenge/master/previewapp.jpg" alt="drawing" width="300"/>
+</p>
 Challenge de Puzzle con un Carrousel hecho manualmente
 
 ## Instalación del proyecto
