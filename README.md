@@ -1,5 +1,13 @@
 # PuzzleChallenge
+
 Challenge de Puzzle con un Carrousel hecho manualmente
+
+<p align="center" width="350">
+  <img src="https://raw.githubusercontent.com/iRetray/PuzzleChallenge/master/previewapp.jpg" alt="drawing" width="350"/>
+</p>
+
+## Instalable para Android (.apk)
+https://expo.dev/artifacts/8e1f88e4-2eec-4ad0-949c-f6d2a583ae87
 
 ## Instalación del proyecto
 Clonar el repositorio localmente
