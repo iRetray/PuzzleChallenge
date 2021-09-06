@@ -10,14 +10,31 @@ const Carrousel = () => {
   const [listCards, setListCards] = useState([]);
 
   useEffect(() => {
-    console.log("calling service");
+    getLastPositionSaved();
+    getCardsData();
+  }, []);
+
+  const getCardsData = () => {
     MockedService.getCardsInformation().then((response) => {
       const isSucess = response && Array.isArray(response);
       if (isSucess) {
         setListCards(response);
       }
     });
-  }, []);
+  };
+
+  const getLastPositionSaved = () => {
+    MockedService.getSavedPosition().then((response) => {
+      if (response) {
+        setCurrentIndex(parseInt(response));
+      }
+    });
+  };
+
+  const updateIndex = (newIndex) => {
+    setCurrentIndex(newIndex);
+    MockedService.saveCurrentPosition(newIndex);
+  };
 
   return (
     <View style={styles.container}>
@@ -35,7 +52,7 @@ const Carrousel = () => {
       <View style={styles.buttonsContainer}>
         <TouchableOpacity
           onPress={() => {
-            setCurrentIndex(currentIndex - 1);
+            updateIndex(currentIndex - 1);
           }}
           style={
             currentIndex === 0
@@ -54,7 +71,7 @@ const Carrousel = () => {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
-            setCurrentIndex(currentIndex + 1);
+            updateIndex(currentIndex + 1);
           }}
           style={
             currentIndex === listCards.length - 1
